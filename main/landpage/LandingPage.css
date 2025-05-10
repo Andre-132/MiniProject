@@ -1,5 +1,5 @@
 body {
-  background-image: url("imgs/GameBackground.png");
+  background-image: url("imgs/DisplayBack.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,6 +9,7 @@ body {
 
 p {
   font-family: "MedievalSharp", sans-serif;
+  color: white;
 }
 
 h1 {
