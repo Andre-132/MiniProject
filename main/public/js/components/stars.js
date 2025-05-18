@@ -1,4 +1,4 @@
-function createStars() {
+export function createStars() {
   const container = document.querySelector(".stars-container");
   const numberOfStars = 200;
 
@@ -18,5 +18,3 @@ function createStars() {
     container.appendChild(star);
   }
 }
-
-document.addEventListener("DOMContentLoaded", createStars);

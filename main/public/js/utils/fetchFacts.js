@@ -1,10 +1,4 @@
-function goToGamePage() {
-  window.location.href = "../game/game.html";
-}
-
-document.getElementById("play-game").addEventListener("click", goToGamePage);
-
-async function getRandomFact() {
+export async function getRandomFact() {
   try {
     const response = await fetch(
       "https://uselessfacts.jsph.pl/api/v2/facts/random?language=en"
@@ -16,7 +10,3 @@ async function getRandomFact() {
     console.error("Error:", error);
   }
 }
-
-document
-  .getElementById("get-fact-button")
-  .addEventListener("click", getRandomFact);
