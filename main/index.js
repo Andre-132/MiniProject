@@ -1,6 +1,6 @@
-import { getRandomFact } from "./utils/fetchFacts.js";
-import { goToGamePage } from "./pages/homePage.js";
-import { createStars } from "./components/stars.js";
+import { getRandomFact } from "./src/js/utils/fetchFacts.js";
+import { goToGamePage } from "./src/js/homePage.js";
+import { createStars } from "./src/js/components/stars.js";
 
 document
   .getElementById("get-fact-button")
