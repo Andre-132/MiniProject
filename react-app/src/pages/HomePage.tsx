@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ModeToggle } from "./components/ui/Mode-Toggle";
+import { ModeToggle } from "../components/ui/Mode-Toggle";
 
 function Home(): any {
   return (
@@ -7,7 +7,6 @@ function Home(): any {
       <div className="flex justify-end p-4">
         <ModeToggle />
       </div>
-
       <h1 className="text-4xl font-bold text-center font-serif">
         Ride Smarter, Ride Scenic
       </h1>

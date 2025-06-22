@@ -1,5 +1,5 @@
 import "./App.css";
-import Home from "./HomePage";
+import Home from "./pages/HomePage";
 import { ThemeProvider } from "./components/ui/Themes";
 
 function App() {
