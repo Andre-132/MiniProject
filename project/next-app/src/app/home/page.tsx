@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import ModeToggle from "@/components/ui/mode-toggle";
 
-function Home(): any {
+function Home() {
   return (
     <div className="text-center space-y-4">
       <div className="flex justify-end p-4">
@@ -20,5 +20,4 @@ function Home(): any {
     </div>
   );
 }
-
 export default Home;
