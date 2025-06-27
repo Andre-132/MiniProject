@@ -1,15 +1,45 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import { Button } from "@/app/components/ui/button";
 import ModeToggle from "@/app/components/ui/mode-toggle";
-
+import Link from "next/link";
+import { SlashIcon } from "lucide-react";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbSeparator,
+} from "@/app/components/ui/breadcrumb";
 function Home() {
-  const router = useRouter();
-
   return (
     <div className="text-center space-y-4">
-      <div className="flex justify-end p-4">
+      <Breadcrumb>
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink asChild>
+              <Link href="/home">Home</Link>
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator>
+            <SlashIcon />
+          </BreadcrumbSeparator>
+          <BreadcrumbItem>
+            <BreadcrumbLink asChild>
+              <Link href="/about">About</Link>
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator>
+            <SlashIcon />
+          </BreadcrumbSeparator>
+          <BreadcrumbItem>
+            <BreadcrumbLink asChild>
+              <Link href="/blog">Blog</Link>
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+
+      <div className="absolute top-4 right-4">
         <ModeToggle />
       </div>
       <h1 className="text-4xl font-bold text-center font-serif">
@@ -22,13 +52,6 @@ function Home() {
       <h3 className="text-xl text-muted-foreground text-center font-serif">
         This blog is for everything motorcycle related.
       </h3>
-      <Button
-        variant="outline"
-        type="button"
-        onClick={() => router.push("/blog")}
-      >
-        Blog
-      </Button>
     </div>
   );
 }
