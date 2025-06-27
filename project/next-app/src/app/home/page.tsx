@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import ModeToggle from "@/components/ui/mode-toggle";
+import { Button } from "@/app/components/ui/button";
+import ModeToggle from "@/app/components/ui/mode-toggle";
 
 function Home() {
   return (
@@ -13,8 +13,11 @@ function Home() {
         Ride Smarter, Ride Scenic
       </h1>
       <h3 className="text-xl text-muted-foreground text-center font-serif">
-        Explore motorcycle-friendly routes, discover scenic roads, and ride safe
-        with real-time hazard pins.
+        Explore motorcycle-friendly routes, discover scenic roads, and ride
+        safe!
+      </h3>
+      <h3 className="text-xl text-muted-foreground text-center font-serif">
+        This blog is for everything motorcycle related.
       </h3>
       <Button variant="outline">Explore Now</Button>
     </div>
