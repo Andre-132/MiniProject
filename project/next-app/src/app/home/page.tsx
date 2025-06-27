@@ -1,9 +1,12 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { Button } from "@/app/components/ui/button";
 import ModeToggle from "@/app/components/ui/mode-toggle";
 
 function Home() {
+  const router = useRouter();
+
   return (
     <div className="text-center space-y-4">
       <div className="flex justify-end p-4">
@@ -19,7 +22,13 @@ function Home() {
       <h3 className="text-xl text-muted-foreground text-center font-serif">
         This blog is for everything motorcycle related.
       </h3>
-      <Button variant="outline">Explore Now</Button>
+      <Button
+        variant="outline"
+        type="button"
+        onClick={() => router.push("/blog")}
+      >
+        Blog
+      </Button>
     </div>
   );
 }
