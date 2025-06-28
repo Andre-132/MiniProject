@@ -12,7 +12,7 @@ let posts = [
   {
     id: "2",
     title: "Top 10 Scenic Motorcycle Roads",
-    author: "Andre A.",
+    author: "Tyler L.",
     date: "2025-06-20",
     content:
       "Discover the best scenic routes around the world for unforgettable motorcycle adventures. https://greatmotorcycleroads.com/louisiana/",

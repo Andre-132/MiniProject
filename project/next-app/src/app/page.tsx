@@ -10,6 +10,7 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from "@/app/components/ui/breadcrumb";
+
 function Home() {
   return (
     <div className="text-center space-y-4">
