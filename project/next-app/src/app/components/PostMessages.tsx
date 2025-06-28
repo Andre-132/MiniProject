@@ -87,7 +87,6 @@ export default function PostWithMessages({
             {messages.map((msg) => (
               <li key={msg.id} className="border p-2 rounded relative">
                 <p className="font-medium">{msg.author}</p>
-                <p>{msg.content}</p>
                 <p className="text-xs text-gray-400">
                   {new Date(msg.date).toLocaleString()}
                 </p>

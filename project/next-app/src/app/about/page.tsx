@@ -18,7 +18,7 @@ function AboutPage() {
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink asChild>
-              <Link href="/home">Home</Link>
+              <Link href="/">Home</Link>
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator>
@@ -57,10 +57,7 @@ function AboutPage() {
             With my focus being tailored to rider safety along with an
             interactive community of bikers alike.
           </p>
-          <p className="text-xl font-serif font-bold">
-            To find our scenic rides, please visit my blog displayed on my
-            homepage.
-          </p>
+          <p className="text-xl font-serif font-bold"></p>
         </div>
       </div>
     </div>

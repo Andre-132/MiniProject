@@ -20,7 +20,7 @@ interface Post {
   content: string;
 }
 
-function blog() {
+function Blog() {
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
   const [title, setTitle] = useState("");
@@ -70,7 +70,7 @@ function blog() {
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink asChild>
-              <Link href="/home">Home</Link>
+              <Link href="/">Home</Link>
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator>
@@ -100,7 +100,6 @@ function blog() {
         <h1 className="text-4xl font-bold text-center">
           Motorcycle Blog Center
         </h1>
-
         <section className="border p-4 rounded shadow">
           <h2 className="text-xl font-semibold mb-2">Create a New Blog Post</h2>
           <form onSubmit={handleNewPost} className="space-y-2">
@@ -150,4 +149,4 @@ function blog() {
   );
 }
 
-export default blog;
+export default Blog;
